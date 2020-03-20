@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1758</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1750</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+    <pointsize>15</pointsize>
+    <weight>9</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>AliveCreate Bill Software</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(255,255,255);
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>1701</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(223, 49, 104);</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::AllEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Product_ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Category</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_SKU</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Description</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_HSN</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_SAC</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Unit_Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Tax</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Quantity</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Purchase_Price</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Image_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Created_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Updated_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Deleted_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Product_Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>1701</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(223, 49, 104);</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::AllEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Comp_Id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cat_Id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_City</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_State</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Address</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Pincode</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Website</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Contact_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Tax_Type</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Tax_Inclusive</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Tin_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Gst_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Pan_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Logo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Sign</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Created_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Updated_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Deleted_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Comp_Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>1701</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(223, 49, 104);</string>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::AllEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Cust_Id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Name</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Contact_Person</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Contact_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Website</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Imp_Note</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Image</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_City</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_State</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Address</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Pincode</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Gst_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Tin_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Pan_No</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Created_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Updated_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Deleted_At</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cust_Status</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1758</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>15</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(33, 103, 120);
+padding:5px 30px;</string>
+   </property>
+   <widget class="QMenu" name="menu_New">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>200</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 22pt &quot;MS Sans Serif&quot;;</string>
+    </property>
+    <property name="title">
+     <string>New</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCustomers">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionAdd_New_Customer"/>
+    <addaction name="actionManage_Customer"/>
+   </widget>
+   <widget class="QMenu" name="menuCompany_Details">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>Company Details</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_New_Company"/>
+    <addaction name="actionManage_Company"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelps">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuProduct_Services">
+    <property name="title">
+     <string>Product/Services</string>
+    </property>
+    <addaction name="actionAdd_Product_Services"/>
+    <addaction name="actionManage_Product_Services"/>
+   </widget>
+   <widget class="QMenu" name="menuInvoice">
+    <property name="title">
+     <string>Invoice</string>
+    </property>
+    <addaction name="actionAdd_Invoice"/>
+   </widget>
+   <addaction name="menu_New"/>
+   <addaction name="menuCustomers"/>
+   <addaction name="menuCompany_Details"/>
+   <addaction name="menuProduct_Services"/>
+   <addaction name="menuInvoice"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelps"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_New_Company">
+   <property name="text">
+    <string>Add New Company</string>
+   </property>
+  </action>
+  <action name="actionManage_Company">
+   <property name="text">
+    <string>Manage Company</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Customer">
+   <property name="text">
+    <string>Add New Customer</string>
+   </property>
+  </action>
+  <action name="actionAdd_Product_Services">
+   <property name="text">
+    <string>Add Product/Services</string>
+   </property>
+  </action>
+  <action name="actionManage_Product_Services">
+   <property name="text">
+    <string>Manage Product/Services</string>
+   </property>
+  </action>
+  <action name="actionManage_Customer">
+   <property name="text">
+    <string>Manage Customer</string>
+   </property>
+  </action>
+  <action name="actionAdd_Invoice">
+   <property name="text">
+    <string>Add Invoice</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

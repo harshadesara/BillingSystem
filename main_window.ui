@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1750</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1750</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>MS Shell Dlg 2</family>
+    <pointsize>15</pointsize>
+    <weight>9</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>AliveCreate Bill Software</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color:rgb(255,255,255);
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1750</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>15</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(33, 103, 120);
+padding:5px 30px;</string>
+   </property>
+   <widget class="QMenu" name="menu_New">
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>200</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 22pt &quot;MS Sans Serif&quot;;</string>
+    </property>
+    <property name="title">
+     <string>New</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCustomers">
+    <property name="styleSheet">
+     <string notr="true">margin:100px 40px;</string>
+    </property>
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionAdd_New_Customer"/>
+   </widget>
+   <widget class="QMenu" name="menuCompany_Details">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 200px;</string>
+    </property>
+    <property name="title">
+     <string>Company Details</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_New_Company"/>
+    <addaction name="actionManage_Company"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelps">
+    <property name="styleSheet">
+     <string notr="true">padding:5px 20px;</string>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menu_New"/>
+   <addaction name="menuCustomers"/>
+   <addaction name="menuCompany_Details"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelps"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_New_Company">
+   <property name="text">
+    <string>Add New Company</string>
+   </property>
+  </action>
+  <action name="actionManage_Company">
+   <property name="text">
+    <string>Manage Company</string>
+   </property>
+  </action>
+  <action name="actionAdd_New_Customer">
+   <property name="text">
+    <string>Add New Customer</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

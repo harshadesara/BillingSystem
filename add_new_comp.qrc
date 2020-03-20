@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="sample">
+    <file>Images/edit264.png</file>
+    <file>Images/delete264.png</file>
+    <file>Images/gallery64.png</file>
+    <file>Images/edit64.png</file>
+    <file>Images/gallery64.png</file>
+    <file>Images/save64.png</file>
+    <file>Images/delete64.png</file>
+    <file>D:/Harsh.jpeg</file>
+    <file>icon.png</file>
+    <file>hba.jpg</file>
+  </qresource>
+  <qresource/>
+  <qresource/>
+</RCC>
